@@ -177,17 +177,21 @@ main {
 
 .text > h1 {
   font-size: 25px;
-  line-height: 30px;
+  line-height: 40px;
 }
 .text > h3 {
   font-size: 15px;
-  line-height: 15px;
+  line-height: 25px;
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 45px;
 }
 
 .text {
-  margin-top: 20px;
+
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+
 }
 
 .cta > button {
