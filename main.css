@@ -4,7 +4,7 @@
   font-family: arial;
 }
 
-body {
+html, body {
 	overflow-x: hidden;
 }
 
