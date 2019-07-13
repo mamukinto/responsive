@@ -40,3 +40,33 @@ document.addEventListener("scroll", function(){ // or window.addEventListener("s
 
 
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+
+        });
+
+        // window.scrollTo({
+        //   top: -50
+        // })
+    });
+});
+
+var i = 1;
+
+function toggleMenu() {
+  i++
+  if (i%2 == 0) {
+    document.querySelector(".navbar-hidden").style.display = "flex"
+  }
+  else {
+    document.querySelector(".navbar-hidden").style.display = "none"
+  }
+}
+
+function closeMenu() {
+    document.querySelector(".navbar-hidden").style.display = "none"
+}
