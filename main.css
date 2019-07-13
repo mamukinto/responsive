@@ -243,6 +243,9 @@ main {
 		width: 100%;
 		margin-top: 750px;
 	}
+	#abouts {
+	/*	margin: 0;*/
+	}
 }
 #abouts {
 	margin-bottom: 50px;
@@ -281,3 +284,86 @@ main {
 }
 
 
+.portfolio-line {
+	height: 350px;
+	width: 100%;
+	background-image: url(bg2.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-line > h1 {
+	color: #FFF;
+	font-size: 32px;
+	letter-spacing: 8px; 
+}
+
+
+.portfolio {
+	width: 950px;
+	margin: auto;
+	color: #2b2b2b;
+	margin-top: 50px;
+}
+
+.portfolio-images > img {
+	width: 22%;
+	margin: 5px;
+}
+
+.portfolio-txt > h1 {
+	margin-top:60px;
+	margin-bottom:60px;
+	text-align: center;
+}
+.portfolio-txt > p {
+	width: 440px;
+	margin: auto;
+	margin-top:60px;
+	margin-bottom:60px;
+	text-align: center;
+}
+
+.portfolio {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+.portfolio-images {
+	display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-around;
+}
+
+.portfolio-images > img {
+	margin: 5px;
+}
+
+@media only screen and (max-width: 950px) {
+	.portfolio {
+		width: 90%;
+	}
+	.portfolio-images > img {
+		width: 23%;
+	}
+	
+}
+
+@media only screen and (max-width: 600px) {
+	.portfolio-images {
+		flex-direction: column;
+	}
+	.portfolio-images > img {
+		width: 100%;
+	}
+}
