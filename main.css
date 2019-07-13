@@ -9,7 +9,7 @@
 }
 
 body {
-
+height: 1000000px;
 }
 
 .header {
@@ -366,4 +366,58 @@ main {
 	.portfolio-images > img {
 		width: 100%;
 	}
+	.portfolio-txt > p {
+		width: 80%;
+	}
+}
+.portfolio > button {
+	border: 0;
+	background-color: transparent;
+	width: 120px;
+	height: 50px;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 15px;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+.portfolio > button:hover {
+
+	background-color: #aaaaaa;
+	color: #000;
+	
+}
+
+.contact-line {
+	height: 350px;
+	width: 100%;
+	background-image: url(bg3.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-line > h1 {
+	color: #FFF;
+	font-size: 32px;
+	letter-spacing: 8px;
+}
+
+.contact > h3 {
+	text-align:center;
+	margin-top: 100px;
+	margin-bottom: 30px;
+	font-size: 40px;
+}
+
+.contact > p {
+	text-align: center;
+	margin-bottom: 50px;
+}
+#contactt {
+	margin-bottom: 150px;
 }

@@ -9,19 +9,19 @@
 </head>
 <body>
 	
-	<header class="header">
+	<header class="header" id="home">
 		<div class="nav">
 			<div class="navbar">
-				<a href="#" class="home"  onclick="closeMenu()">HOME</a>
+				<a href="#home" class="home"  onclick="closeMenu()">HOME</a>
 				<a href="#abouts" class="hidden">
 				<i class="fa fa-user"></i>
 				ABOUT
 				</a>
-				<a href="#" class="hidden">
+				<a href="#portfolio" class="hidden">
 				<i class="fa fa-th"></i>
 				PORTFOLIO
 				</a>
-				<a href="#" class="hidden">
+				<a href="#contact" class="hidden">
 				<i class="fa fa-envelope"></i>
 				CONTACT
 			    </a>
@@ -39,11 +39,11 @@
 						<i class="fa fa-user"></i>
 						ABOUT
 					</a>
-					<a href="#" onclick="closeMenu()">
+					<a href="#portfolio" onclick="closeMenu()">
 						<i class="fa fa-th"></i>
 						PORTFOLIO
 					</a>
-					<a href="#" onclick="closeMenu()">
+					<a href="#contact" onclick="closeMenu()">
 						<i class="fa fa-envelope"></i>
 						CONTACT
 				    </a>
@@ -128,15 +128,15 @@
 
 
 
-	<section class="portfolio">
+	<section class="portfolio" id="portfolio">
 		<div class="portfolio-txt">
 			<h1>MY WORK</h1>
 			<p>Here are some of my latest lorem work ipsum tipsum.
 			Click on the images to make them bigger</p>
 		</div>
-		<div class="portfolio-images">
+		<div class="portfolio-images"  >
 
-			<img src="1.jpg" alt="1">
+			<img src="1.jpg" alt="1" >
 
 			<img src="2.jpg" alt="2">
 
@@ -153,8 +153,20 @@
 			<img src="8.jpg" alt="8">
 
 		</div>
+	
+		<button >LOAD MORE</button>
 	</section>
+	
 
+	<div class="contact-line"><h1>CONTACT</h1></div><div  id="contact"></div>
+	
+	<div class="contact">
+  		<h3>WHERE I WORK</h3>
+  		<p><em>I'd love your feedback!</em></p>
+		
+
+
+	</div>
 
 
 
