@@ -1,34 +1,42 @@
-var nav = document.getElementById("nav");
-var cart = document.getElementById("cart");
-var j = 1;
-var i = 1;
+var lastScrollTop = 0;
+// element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+document.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
+   var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+   if (st > lastScrollTop){
 
-function toggleNav() {
-    i++;    
-    if (i%2===0) {
-        nav.classList.remove("closeNav");
-        nav.classList.add("openNav");
-        nav.style.left = "0";
-    }
-    else {
-        nav.classList.remove("openNav");
-        nav.classList.add("closeNav");
-        nav.style.left = "-50%";
-    }
-}
 
-function toggleCart() {
-    j++
-    if (j%2===0) {
-        cart.classList.remove("closeCart");
-        cart.classList.add("openCart");
-        cart.style.right = "0";
-    }
-    else {
-        cart.classList.remove("openCart");
-        cart.classList.add("closeCart");
-        cart.style.right="-50%"
-    }
-}
+        console.log("down: " + st)
+
+        if (st==200 || st>200) {
+          document.querySelector(".header").style.backgroundColor = "white";
+          document.querySelector(".header").classList.add("shadow")
+          document.querySelector(".header").classList.add("animate")
+        }
+
+
+   } else {
+
+    console.log("up: " + st)
+
+    if (st==200 || st<200) {
+          document.querySelector(".header").style.backgroundColor = "transparent";
+          document.querySelector(".header").classList.remove("shadow")
+          document.querySelector(".header").classList.remove("animate")
+        }
+
+   }
+   lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+}, false);
+
+
+
+
+
+
+
+// window.onbeforeunload = function () {
+//   window.scrollTo(0, 0);
+// }
+
 
 
