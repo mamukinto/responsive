@@ -9,22 +9,30 @@
 </head>
 <body>
 	
-	<header class="header" id="home">
+	<header class="header">
 		<div class="nav">
 			<div class="navbar">
+				<div class="menu-item">
 				<a href="#home" class="home"  onclick="closeMenu()">HOME</a>
+				</div>
+				<div class="menu-item">
 				<a href="#abouts" class="hidden">
 				<i class="fa fa-user"></i>
 				ABOUT
 				</a>
+				</div>
+				<div class="menu-item">
 				<a href="#portfolio" class="hidden">
 				<i class="fa fa-th"></i>
 				PORTFOLIO
 				</a>
+				</div>
+				<div class="menu-item">
 				<a href="#contact" class="hidden">
 				<i class="fa fa-envelope"></i>
 				CONTACT
 			    </a>
+			    </div>
 				<div class="hidden-burger">
 
 				<i class="fa fa-bars" onclick="toggleMenu()"></i>
@@ -35,18 +43,24 @@
 			
 			</div>
 				<div class="navbar-hidden">
+
 					<a href="#abouts" onclick="closeMenu()">
 						<i class="fa fa-user"></i>
 						ABOUT
 					</a>
+
+
 					<a href="#portfolio" onclick="closeMenu()">
 						<i class="fa fa-th"></i>
 						PORTFOLIO
 					</a>
+
+					
 					<a href="#contact" onclick="closeMenu()">
 						<i class="fa fa-envelope"></i>
 						CONTACT
 				    </a>
+
 			   </div>
 
 		</div>
@@ -57,7 +71,7 @@
 
 	</header>
 
-
+	<div id="home"></div>
 
 
 	<main>
@@ -160,14 +174,54 @@
 
 	<div class="contact-line"><h1>CONTACT</h1></div><div  id="contact"></div>
 	
-	<div class="contact">
-  		<h3>WHERE I WORK</h3>
-  		<p><em>I'd love your feedback!</em></p>
-		
+	<section class="contact">
+		<div class="titles">
+	  		<h3>WHERE I WORK</h3>
+	  		<p><em>I'd love your feedback!</em></p>
+		</div>
+	
+
+		<div class="contact-info">
+			<div class="contact-image">
+				<img src="map.jpg" alt="map">
+			</div>
+			<div class="contact-text-form">
+				<i class="fa fa-map-marker"></i> Tbilisi, GE </br>
+				<i class="fa fa-phone"></i> Phone: +995 555 402 029 </br>
+				<i class="fa fa-envelope"></i> Email: mamnukinto@gmail.com </br>
+
+				<form action="/action_page.php">
+				    <input class="name-input" type="text" name="name"  placeholder="Name">
+				    <input class="email-input" type="text" name="email"  placeholder="Email"><br>
+				    <input class="message-input" type="text" name="message"  placeholder="Message"><br>
+
+				    <button class="submit" type="submit"><i class="fa fa-paper-plane"></i>Send message</button>
+				</form>
+			</div>
+		</div>
 
 
-	</div>
 
+
+
+	</section>
+
+
+		<section class="footer">
+			
+
+		<button class="to-top"><i class="fa fa-arrow-up"></i>   To the top</button>
+<div class="socials">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+	<p>Mamukinto 2019 . All rights reserved</p>
+		</section>
+	
 
 
 	</main>
@@ -175,9 +229,7 @@
 
 
 
-	<footer>
-		
-	</footer>
+
 
 
 
